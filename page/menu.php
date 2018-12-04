@@ -19,7 +19,7 @@
 
             <ul class='php'>
 
-                <li><a href='#creer'>creer</a></li>
+                <li><a href="./page/forms.php">creer</a></li>
                 <li><a href='#mofifier'>modifier</a></li>
                 <li><a href='#supprimer'>supprimer</a></li>
 
