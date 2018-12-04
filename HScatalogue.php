@@ -50,6 +50,7 @@
                     <th>id</th>
                     <th>titre</th>
                     <th>date</th>
+                    <th>-</th>
                     <th>image</th>
 
                 </tr>
