@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-
-
     <head>     
         <link rel="stylesheet" href="style/style_hs.css"/>
         <link rel="icon" type="image/png" href="img/logohs.png" />
