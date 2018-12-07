@@ -9,27 +9,18 @@
 
 <body>
 
-    <p id="info">
-        Hearstone <br>
-        Espace Création de Fiche <br>
-    </p>
-
     <ul class='menu'>
 
         <form name="form1" method="POST" action="forms.php" enctype="multipart/form-data">
 
-            <li><input type="texte"     name = "titre"              value = "titre"></li>
-            <li><input type="texte"     name = "date"               value = "date"><li>
-            <li><input type="file"      name = "fileToUpload"       value = "fileToUpload" ><li>
-            <li><input type="submit"    name = "submit"             value = "submit"><li>
+            <input type="texte"     name = "titre"              value = "titre"> 
+            <input type="texte"     name = "date"               value = "date">
+            <input type="file"      name = "fileToUpload"       value = "fileToUpload" >
+            <input type="submit"    name = "submit"             value = "submit"> 
 
         </form>
 
     </ul>
-    
-    <div>
-        <img src="../img/cardback.png" id = "carte" /> 
-    </div>
     
 </body>
 </html>

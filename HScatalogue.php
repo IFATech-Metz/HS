@@ -28,8 +28,7 @@
 
                         <p id="info">
                         Catalogue en ligne <br>
-                        Projet HearStone basé sur le jeu , une Collection, des échange, l'historique <br>
-                        et bien plus a voir...
+                        Projet HearStone Catalogue en Ligne <br>
                         </p>
 
                 </section>
@@ -55,6 +54,7 @@
 
                 <?php
                     include './page/cont_lib.php';
+                    include './page/Files_Read.php';
                 ?>
 
                 </table>

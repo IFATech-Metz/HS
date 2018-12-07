@@ -30,23 +30,15 @@
                 $tableau[$champ] = $valeur; 
             }
             
+            // affichage image
             echo '<tr>';
             foreach ($tableau as $champ => $valeur) {
-                echo '<td>' . $valeur . '</td>';             
+                echo '<td>' . $valeur . '</td>';
             }
-                echo "<td><img width=100 height=120 src = './" .$rp_img. "/" .$tableau["id"].".png '
-
-                /></td>"; 
+                echo "<td><img width=100 height=120 src = './" .$rp_img. "/" .$tableau["id"].".png '/></td>"; 
                     
             echo '</tr>';
 
-            // affichage image
-            /*
-            echo "<img src='", $rp, "/", 
-            $sous_fichier, "'><a href='#' onclick=\"", $rp, "/", 
-            $sous_fichier, "','png','width=120,height=150')\">", 
-            $sous_fichier, "<br>";
-            */
             fclose ($file);
         }                                                                                                                                                                        
     }

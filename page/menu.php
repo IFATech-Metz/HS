@@ -3,15 +3,16 @@
 
     <ul class='menu'>
                         
-        <li><a href='#acceuil'>accueil</a>
-        </li>
-            
+        <!--<li><a href='#acceuil'>accueil</a></li>-->
+        
+        <!--
         <li><a href='#liste'>liste</a>
 
             <ul class='sommaire'>
                 <li><a href='#recherche'>recherche</a></li>
                 <li><a href='#categories'>categories</a></li>
             </ul>
+        -->
 
         </li>
         
