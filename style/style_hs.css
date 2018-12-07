@@ -18,11 +18,10 @@
         }
 
         #titre {
-            vertical-align: middle;
+            position: absolute;
             margin-bottom: 0px;
-            margin-left: 250px;
-            width: 1000px;
-            height: 300px;
+            margin-left:25%;
+            width: 50%;
             
             /*background-color: rgba(255, 255, 255, 0.5);
             border-radius: 500px;*/
@@ -30,13 +29,28 @@
         }
 
         #anims{
-            position: absolute;
             width: 250px; 
+        }
+
+        #icon{
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 25%;
+        }
+        #icon:hover{
+            background-color: mediumpurple;
+            border-radius: 25%;
         }
 
         body{
             background-image: url("../img/texture.png");
+            
+            font-family: DejaVu Sans Mono, monospace;
         }
+
+        #carte{
+            margin-top: -15%;
+            margin-left: 120%;
+          }
         
         h1{
             margin: 0;
@@ -45,20 +59,15 @@
             border-radius: 5px ;
             text-transform: capitalize, uppercase;
             font-size: 30px;
-            background-color: rgba(125, 110, 207, 0.507) ; 
             border-radius: 5px; 
-            text-shadow: 1px 0 0 white, 0 1px 0 white, 0 -1px 0  white, -1px 0 0  white, 
-                1px 1px 0  white, 1px -1px 0  white,-1px 1px 0  white, -1px -1px 0  white;
+            text-shadow: 1px 0 0 rgb(163, 141, 86), 0 1px 0 rgba(163, 141, 86, 0.5), 0 -1px 0  rgba(163, 141, 86, 0.5),
+             -1px 0 0  rgba(163, 141, 86, 0.5), 1px 1px 0  rgba(163, 141, 86, 0.5), 1px -1px 0  rgba(163, 141, 86, 0.5),
+             -1px 1px 0  rgba(163, 141, 86, 0.5), -1px -1px 0  rgba(163, 141, 86, 0.5);
 
-            border: 25px solid transparent;
-            border-image: url('../img/border.png');
-            border-image-slice: 250;
-            border-image-width: 10;
-            border-image-outset: 0;
-            border-image-repeat: round;
         }
 
         h2{
+            margin-left: 50%;
             margin: 0;
             width: 80px;
             text-transform: uppercase 5px;
@@ -66,22 +75,42 @@
             text-transform: capitalize, uppercase;
             font-size: 25px;
             text-align: center;
-            background-color: rgba(165, 111, 216, 0.5) ;
-            text-shadow: 1px 0 0 gray, 0 1px 0 gray, 0 -1px 0  gray, -1px 0 0  gray, 
-                1px 1px 0  gray, 1px -1px 0  gray,-1px 1px 0  gray, -1px -1px 0  gray;
+            text-shadow: 1px 0 0 rgb(163, 141, 86), 0 1px 0 rgba(163, 141, 86, 0.5), 0 -1px 0  rgba(163, 141, 86, 0.5),
+             -1px 0 0  rgba(163, 141, 86, 0.5), 1px 1px 0  rgba(163, 141, 86, 0.5), 1px -1px 0  rgba(163, 141, 86, 0.5),
+             -1px 1px 0  rgba(163, 141, 86, 0.5), -1px -1px 0  rgba(163, 141, 86, 0.5);
 
+        }
+
+        p {
+            text-align: center;
+            height: 100%;
+            width: 93%;
+            padding: 25px;
+            font-size: 150%;
+            font-weight: bold;
+            text-shadow: 1px 0 0 rgb(163, 141, 86), 0 1px 0 rgba(163, 141, 86, 0.5), 0 -1px 0  rgba(163, 141, 86, 0.5),
+             -1px 0 0  rgba(163, 141, 86, 0.5), 1px 1px 0  rgba(163, 141, 86, 0.5), 1px -1px 0  rgba(163, 141, 86, 0.5),
+             -1px 1px 0  rgba(163, 141, 86, 0.5), -1px -1px 0  rgba(163, 141, 86, 0.5);
+            background-color: rgba(168, 113, 219, 0.5);
+            border-radius: 15px;
+            
             border: 25px solid transparent;
             border-image: url('../img/border.png');
             border-image-slice: 250;
             border-image-width: 10;
             border-image-outset: 0;
             border-image-repeat: round;
+
+            overflow: auto;
+            
         }
 
-        p {
-            height: 50px;
+        p.descript {
+            text-align: center;
+            height: 100%;
+            width: 93%;
             padding: 25px;
-            font-size: 18px;
+            font-size: 100%;
             font-weight: bold;
             text-shadow: 1px 0 0 rgb(163, 141, 86), 0 1px 0 rgba(163, 141, 86, 0.5), 0 -1px 0  rgba(163, 141, 86, 0.5),
              -1px 0 0  rgba(163, 141, 86, 0.5), 1px 1px 0  rgba(163, 141, 86, 0.5), 1px -1px 0  rgba(163, 141, 86, 0.5),
@@ -98,13 +127,7 @@
 
             overflow: auto;
             
-        }
-    
-
-        p:hover{
-        }
-
-        
+        }  
     
         footer{
             position: absolute ;
@@ -123,11 +146,6 @@
           flex-direction: row;
           flex-wrap: wrap;
           background: rgba(98, 0, 255, 0.479);
-        }
-
-        #menu
-        {
-            
         }
 
         ul {
@@ -150,7 +168,6 @@
             background-color:rgb(139, 100, 237);
             color:black;
             text-decoration:none;
-            font-family: Arial, Helvetica, sans-serif;
             text-shadow: 1px 0 0 rgb(165, 138, 219), 0 1px 0 rgb(165, 138, 219), 0 -1px 0  rgb(165, 138, 219), 
             -1px 0 0  rgb(165, 138, 219), 1px 1px 0  rgb(165, 138, 219), 1px -1px 0  rgb(165, 138, 219),
             -1px 1px 0  rgb(165, 138, 219), -1px -1px 0  rgb(165, 138, 219);
@@ -175,7 +192,7 @@
         border: medium solid #000000;
         width: 100%;
         }
-    td, th {
+    td,th{
         border: thin solid #2b018d;
         width: 10%;
         background-color: #a280ff75 ;
@@ -183,11 +200,11 @@
         text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black, 
         2px 2px 0 black, 2px -2px 0 black,-2px 2px 0 black, -2px -2px 0 black;
         text-decoration:none;
-        font-family: Arial, Helvetica, sans-serif;
         }
 
-    td{           
-    }
+    .element:hover {
+            box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+        }
 
     th {
             height: 50px;
@@ -195,7 +212,6 @@
             background-color: rgba(92, 43, 226, 0.5) ;
             color: #DCDCDC;
             text-decoration:none;
-            font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             text-transform: capitalize;
         }
