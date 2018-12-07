@@ -12,7 +12,7 @@
 
                 <p id="info">
                 Catalogue en ligne <br>
-                Espace Modification <br>
+                Espace Supression <br>
                 </p>
 
         </section>
@@ -30,14 +30,10 @@
                         <th>titre</th>
                         <th>date</th>
                         <th>-</th>
-                        <th>File Access</th>
-                        <th>image</th>
-                        <th>Pic Access</th>
-                        <th>-</th>
                         <th>erase</th>
 
                     <?php
-                        include '../page/library.php';
+                        include '../page/libraryerase.php';
                     ?>
                     
                     </tr>
