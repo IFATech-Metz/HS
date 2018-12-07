@@ -2,8 +2,8 @@
 
     // nom du répertoire à lister
 
-    $rp_img = "./img/cartes";
-    $rp_txt = "./txt";
+    $rp_img = "../img/cartes";
+    $rp_txt = "../txt";
     
     $rep_txt = opendir($rp_txt);
 
@@ -36,23 +36,34 @@
             echo '<tr>';
             foreach ($tableau as $champ => $valeur) {
 
-                echo '<td>' .$valeur . '</td>';
-                
+                echo '<td>' .$valeur . '</td>'; 
             }
-            echo '<td><a href="./txt/'.$fichier.'"target="_blank">
-            <input type="image" id="icon" img src="./img/iconlink.png" width=25%></a>Click</td>';
 
-            echo "<td><img width=100  src = './" .$rp_img. "/" .$tableau["id"].".png '/></td>"; 
+            $orid=str_replace(".txt", "", $fichier);
+            
+            // Merci Cedric 4 Help ?!
+                echo "<td>
+                        <form method='GET' action=''>
+                            <button type='submit' id='icon' name='".$orid."'> <img src='../img/iconerase.png' width=25%></button>
+                        </form>
+                    </td>";
 
-            $fichierimg = str_replace(".txt", ".png", $fichier);
-            echo '<td><a href="./img/cartes/'.$fichierimg.'"target="_blank">
-            <input type="image" id="icon" img src="./img/imglink.png" width=50></a>Click</td>';
-                    
+            
+
+            //unlink(realpath($fichier));
+            //unlink ("../txt/".$fichier.".txt");
+    
             echo '</tr>';
 
 
             fclose ($file);
-        }                                                                                                                                                                        
+        }     
+
+        if (isset($_GET[$orid])) 
+            {
+                unlink ("../txt/".$orid.".txt");
+            }  
+
     }
     
     closedir($rep_txt);

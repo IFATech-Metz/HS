@@ -9,59 +9,56 @@
 
     <body>
 
-        <div>
-            
-            <img src="img/logohs.png" id = "logo" />
-
+        <div>           
+            <img src="img/logohs.png" id = "logo" />            
+            <img src="img/titrehs.png" id = "titre" />
             <img src="img/anims.gif" id = "anims" />
-            
-            <img src="img/titrehs.png" id = "titre" />    
-
         </div>
 
         <header>
-                <h1> HeartStone </h1>
+                <!--<h1> HeartStone </h1>-->
                 <h2> Accueil </h2>
         </header>
 
-                <section>
+            <section>
 
-                        <p id="info">
-                        Catalogue en ligne <br>
-                        Projet HearStone Catalogue en Ligne <br>
-                        </p>
+                    <p id="info">
+                    Catalogue en ligne <br>
+                    Projet Catalogue HearStone <br>
+                    </p>
 
-                </section>
+            </section>
 
-                    <?php include("./page/menu.php"); ?>
-                 
-                <br><br>
+                <?php include("./page/menu.php"); ?>
+                
+            <br><br>
 
-                <article>
+        <article>
                 
             
-                <section id="section">
+            <section id="section">
 
                 <table>
-                <tr>
-                    <th>id</th>
-                    <th>titre</th>
-                    <th>date</th>
-                    <th>-</th>
-                    <th>image</th>
+                    <tr>
+                        <th>id</th>
+                        <th>titre</th>
+                        <th>date</th>
+                        <th>-</th>
+                        <th>File Access</th>
+                        <th>image</th>
+                        <th>Pic Access</th>
 
-                </tr>
-
-                <?php
-                    include './page/cont_lib.php';
-                    include './page/Files_Read.php';
-                ?>
+                    <?php
+                        include './page/cont_lib.php';
+                    ?>
+                    
+                    </tr>
 
                 </table>
 
-                </section>
+            </section>
 
-                </article>
+        </article>
 
 <br>
         <footer>
@@ -71,6 +68,4 @@
     </body>
             
 
-<?php
-
-?>
+</html>

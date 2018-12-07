@@ -2,8 +2,8 @@
 
     // nom du répertoire à lister
 
-    $rp_img = "./img/cartes";
-    $rp_txt = "./txt";
+    $rp_img = "../img/cartes";
+    $rp_txt = "../txt";
     
     $rep_txt = opendir($rp_txt);
 
@@ -40,13 +40,13 @@
                 
             }
             echo '<td><a href="./txt/'.$fichier.'"target="_blank">
-            <input type="image" id="icon" img src="./img/iconlink.png" width=25%></a>Click</td>';
+            <input type="image" id="icon" img src="../img/iconlink.png" width=25%></a>Click</td>';
 
             echo "<td><img width=100  src = './" .$rp_img. "/" .$tableau["id"].".png '/></td>"; 
 
             $fichierimg = str_replace(".txt", ".png", $fichier);
             echo '<td><a href="./img/cartes/'.$fichierimg.'"target="_blank">
-            <input type="image" id="icon" img src="./img/imglink.png" width=50></a>Click</td>';
+            <input type="image" id="icon" img src="../img/imglink.png" width=50></a>Click</td>';
                     
             echo '</tr>';
 

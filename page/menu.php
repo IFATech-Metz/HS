@@ -20,9 +20,9 @@
 
             <ul class='php'>
 
-                <li><a href="./page/forms.php">creer</a></li>
-                <li><a href='#mofifier'>modifier</a></li>
-                <li><a href='#supprimer'>supprimer</a></li>
+                <li><a href="./page/forms.php"      target="_blank">creer</a></li>
+                <li><a href="./page/formsmodif.php" target="_blank">modifier</a></li>
+                <li><a href="./page/formserase.php" target="_blank">supprimer</a></li>
 
             </ul>
 
