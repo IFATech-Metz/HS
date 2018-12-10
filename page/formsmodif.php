@@ -8,45 +8,15 @@
 
     <body>
 
-        <section>
+       <p id="info">
+        Catalogue HearStone <br>
+        Espace Modification <br>
+        (Unavailable for the moment) <br>
+        </p>
 
-                <p id="info">
-                Catalogue en ligne <br>
-                Espace Modification <br>
-                </p>
-
-        </section>
-                 
-        <br><br>
-
-        <article>
-                
-            
-            <section id="section">
-
-                <table>
-                    <tr>
-                        <th>id</th>
-                        <th>titre</th>
-                        <th>date</th>
-                        <th>-</th>
-                        <th>File Access</th>
-                        <th>image</th>
-                        <th>Pic Access</th>
-                        <th>-</th>
-                        <th>Modif</th>
-
-                    <?php
-                        include '../page/library.php';
-                    ?>
-                    
-                    </tr>
-
-                </table>
-
-            </section>
-
-        </article>
+        <ul>
+            <li><a href="../HScatalogue.php">Accueil</a></li>
+        </ul>
 
     </body>
      

@@ -16,16 +16,12 @@
 
         </li>
         
-        <li><a href='#gestion'>gestion</a>
+        <li><a href='#gestion'>gestion:</a>
 
             <ul class='php'>
-
-                <li><a href="./page/forms.php"      target="_blank">creer</a></li>
-                <li><a href="./page/formsmodif.php" target="_blank">modifier</a></li>
-                <li><a href="./page/formserase.php" target="_blank">supprimer</a></li>
-
-            </ul>
-
+                <li><a href="./page/forms.php"      >creer</a></li>
+                <li><a href="./page/formsmodif.php" >modifier</a></li>
+                <li><a href="./page/formserase.php" >supprimer</a></li></ul>
         </li>
 
     </ul>

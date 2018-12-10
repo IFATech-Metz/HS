@@ -3,7 +3,7 @@
 <html>
     <head>     
         <link rel="stylesheet" href="../style/style_hs.css"/>
-        <title>mon formulaire de modification</title>
+        <title>Carte supression</title>
     </head>
 
     <body>
@@ -11,19 +11,20 @@
         <section>
 
                 <p id="info">
-                Catalogue en ligne <br>
+                Catalogue HearStone <br>
                 Espace Supression <br>
                 </p>
 
         </section>
                  
         <br><br>
-
-        <article>
-                
-            
+  
             <section id="section">
 
+            <ul>
+                <li><a href="../HScatalogue.php">Accueil</a></li>
+            </ul>
+            
                 <table>
                     <tr>
                         <th>id</th>
@@ -31,18 +32,14 @@
                         <th>date</th>
                         <th>-</th>
                         <th>erase</th>
-
-                    <?php
-                        include '../page/libraryerase.php';
-                    ?>
-                    
+                        <?php
+                            include '../page/libraryerase.php';
+                        ?> 
                     </tr>
 
                 </table>
 
             </section>
-
-        </article>
 
     </body>
      

@@ -4,30 +4,36 @@
 
 <head>
     <link rel="stylesheet" href="../style/style_hs.css"/>
-    <title>Mon Formulaire</title>
+    <title>Carte creation</title>
 </head>
 
 <body>
 
     <p id="info">
-        Hearstone <br>
-        Espace Création de Fiche <br>
+        Catalogue HearStone <br>
+        Espace Création <br>
     </p>
 
-    <ul class='menu'>
+        <ul>
+            <li><a href="../HScatalogue.php">Accueil</a></li>
+        </ul>
 
-        <form name="form1" method="POST" action="forms.php" enctype="multipart/form-data">
+    <p class="descript1">
+        Remplir les champs et click sur "Forge la Carte" pour la Créer.<br>
+    </p>
 
+    <ul>
+        <form name="form1" method="POST" action="forms.php" enctype="multipart/form-data" id='insert'>
             <li><input type="texte"     name = "titre"              value = "titre"></li>
             <li><input type="texte"     name = "date"               value = "date"><li>
             <li><input type="file"      name = "fileToUpload"       value = "fileToUpload" ><li>
-            <li><input type="submit"    name = "submit"             value = "submit"><li>
+            <div><button type="submit"    name = "submit"             value = "submit"   class='button'>Forge la Carte<div>
         </form>
     </ul>
 
     <br>
 
-    <p class="descript">
+    <p class="descript1">
         Description:
         <br>
         <?php
@@ -115,14 +121,9 @@
                 }
             }
         }
-
         ?>
     </p>
 
-    <li>
-        <img src="../img/cardback.png" id = "carte" /> 
-    </li>
-    
     </body>
 
 
