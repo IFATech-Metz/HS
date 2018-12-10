@@ -41,14 +41,12 @@
 
             $orid=str_replace(".txt", "", $fichier);
             
-            // Merci Cedric 4 Help ?!
+            // Thank Cedric 4 Help ?!
                 echo "<td>
                         <form method='GET' action=''>
                             <button type='submit' id='icon' name='".$orid."'> <img src='../img/iconerase.png' width=25%></button>
                         </form>
                     </td>";
-
-            
 
             //unlink(realpath($fichier));
             //unlink ("../txt/".$fichier.".txt");
@@ -62,6 +60,7 @@
         if (isset($_GET[$orid])) 
             {
                 unlink ("../txt/".$orid.".txt");
+                echo '<META HTTP-EQUIV="Refresh" Content="0; URL='.$location.'">';
             }  
 
     }

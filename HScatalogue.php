@@ -28,8 +28,10 @@
                     </p>
 
             </section>
-
+            
+            <nav>
                 <?php include("./page/menu.php"); ?>
+            </nav>
                 
             <br><br>
 
