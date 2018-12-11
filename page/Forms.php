@@ -24,10 +24,10 @@
 
     <ul>
         <form name="form1" method="POST" action="forms.php" enctype="multipart/form-data" id='insert'>
-            <li><input type="texte"     name = "titre"              value = "titre"></li>
-            <li><input type="texte"     name = "date"               value = "date"><li>
-            <li><input type="file"      name = "fileToUpload"       value = "fileToUpload" ><li>
-            <div><button type="submit"    name = "submit"             value = "submit"   class='button'>Forge la Carte<div>
+            <li><input      type="texte"     name = "titre"              value = "titre"></li>
+            <li><input      type="texte"     name = "date"               value = "date"><li>
+            <li><input      type="file"      name = "fileToUpload"       value = "fileToUpload" ><li>
+            <div><button    type="submit"    name = "submit"             value = "submit"   class='button'>Forge la Carte<div>
         </form>
     </ul>
 
@@ -63,9 +63,9 @@
             $title =    $_POST['titre'];
             $date =     $_POST['date'];
 
-        $content = "id : ".        $id             ;
-        $content = "\r\n".        "titre : ".     $_POST['titre'] ;
-        $content = "\r\n".        "date : ".      $_POST['date']  ;
+        $content .= "id : ".        $id             ;
+        $content .= "\r\n".        "titre : ".     $_POST['titre'] ;
+        $content .= "\r\n".        "date : ".      $_POST['date']  ;
         
         $h = fopen("../txt/".$id.".txt", "a");
         fwrite($h, $content);
