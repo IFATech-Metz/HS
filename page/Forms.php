@@ -63,15 +63,13 @@
             $title =    $_POST['titre'];
             $date =     $_POST['date'];
 
-        $content .= "id : ".        $id             ;
-        $content .= "\r\n".        "titre : ".     $_POST['titre'] ;
-        $content .= "\r\n".        "date : ".      $_POST['date']  ;
+        $content = "id : ".        $id             ;
+        $content = "\r\n".        "titre : ".     $_POST['titre'] ;
+        $content = "\r\n".        "date : ".      $_POST['date']  ;
         
         $h = fopen("../txt/".$id.".txt", "a");
         fwrite($h, $content);
         fclose($h);
-
-
 
         }
 
