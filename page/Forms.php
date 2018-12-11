@@ -19,7 +19,7 @@
         </ul>
 
     <p class="descript1">
-        Remplir les champs et click sur "Forge la Carte" pour la Créer.<br>
+        Remplir les champs, choisir son image extension ".png" et click sur "Forge la Carte" pour la Créer.<br>
     </p>
 
     <ul>
@@ -63,15 +63,13 @@
             $title =    $_POST['titre'];
             $date =     $_POST['date'];
 
-        $content .= "id : ".        $id             ;
-        $content .= "\r\n".        "titre : ".     $_POST['titre'] ;
-        $content .= "\r\n".        "date : ".      $_POST['date']  ;
+        $content = "id : ".        $id             ;
+        $content = "\r\n".        "titre : ".     $_POST['titre'] ;
+        $content = "\r\n".        "date : ".      $_POST['date']  ;
         
         $h = fopen("../txt/".$id.".txt", "a");
         fwrite($h, $content);
         fclose($h);
-
-
 
         }
 
