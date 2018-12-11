@@ -19,7 +19,7 @@
         </ul>
 
     <p class="descript1">
-        Remplir les champs et click sur "Forge la Carte" pour la Créer.<br>
+        Remplir les champs, choisir son image extension ".png" et click sur "Forge la Carte" pour la Créer.<br>
     </p>
 
     <ul>
