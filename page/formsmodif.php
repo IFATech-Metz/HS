@@ -15,7 +15,7 @@
         </p>
 
         <ul>
-            <li><a href="../HScatalogue.php">Accueil</a></li>
+            <li><a href="../index.php">Accueil</a></li>
         </ul>
 
     </body>

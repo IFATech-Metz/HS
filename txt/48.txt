@@ -1,3 +1,0 @@
-id : 48
-titre : titre
-date : date

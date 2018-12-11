@@ -15,7 +15,7 @@
     </p>
 
         <ul>
-            <li><a href="../HScatalogue.php">Accueil</a></li>
+            <li><a href="../index.php">Accueil</a></li>
         </ul>
 
     <p class="descript1">
@@ -54,6 +54,7 @@
                         $idcount++;
                     }                                                                                                                                                                        
                 }
+                
         closedir($rep_txt);
         $id =       $idcount++;         //var incremt
 
@@ -62,13 +63,15 @@
             $title =    $_POST['titre'];
             $date =     $_POST['date'];
 
-        $content .= "id : ".        $id             ."\r\n";
-        $content .= "titre : ".     $_POST['titre'] ."\r\n";
-        $content .=  "date : ".     $_POST['date']  ."\r\n";
+        $content .= "id : ".        $id             ;
+        $content .= "\r\n".        "titre : ".     $_POST['titre'] ;
+        $content .= "\r\n".        "date : ".      $_POST['date']  ;
         
         $h = fopen("../txt/".$id.".txt", "a");
         fwrite($h, $content);
         fclose($h);
+
+
 
         }
 

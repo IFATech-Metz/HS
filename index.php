@@ -45,7 +45,6 @@
                         <th>id</th>
                         <th>titre</th>
                         <th>date</th>
-                        <th>-</th>
                         <th>File Access</th>
                         <th>image</th>
                         <th>Pic Access</th>

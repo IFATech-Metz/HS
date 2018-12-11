@@ -1,3 +1,0 @@
-id : S05
-titre : MecanOeuf
-date : 01/10/2018

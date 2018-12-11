@@ -1,3 +1,0 @@
-id : 40
-titre :  faucheur pilote
-date : 01/10/2018

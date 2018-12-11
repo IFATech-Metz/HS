@@ -22,7 +22,7 @@
             <section id="section">
 
             <ul>
-                <li><a href="../HScatalogue.php">Accueil</a></li>
+                <li><a href="../index.php">Accueil</a></li>
             </ul>
             
                 <table>
@@ -30,7 +30,6 @@
                         <th>id</th>
                         <th>titre</th>
                         <th>date</th>
-                        <th>-</th>
                         <th>erase</th>
                         <?php
                             include '../page/libraryerase.php';
