@@ -1,3 +1,0 @@
-id : 34
-titre : toxicologue
-date : 01/10/2018

@@ -60,6 +60,7 @@
         if (isset($_GET[$orid])) 
             {
                 unlink ("../txt/".$orid.".txt");
+                unlink ("../img/cartes/".$orid.".png");
                 echo '<META HTTP-EQUIV="Refresh" Content="0; URL='.$location.'">';
             }  
 
